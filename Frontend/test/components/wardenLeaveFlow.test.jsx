@@ -27,7 +27,7 @@ const pendingLeave = Object.freeze({
   student: {
     userId: 22,
     name: "Kavya Nair",
-    email: "student.h1@hostelmate.example",
+    email: "student.h1@staysync.example",
     rollNo: "DEMO-H1-001",
   },
   hostel: { id: 1, code: "H1", name: "North Residence Hall" },

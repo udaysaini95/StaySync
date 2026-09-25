@@ -1,5 +1,5 @@
 const TOKEN_PATTERN = /^[A-Za-z0-9_-]{43}$/;
-const QR_PREFIX = "hostelmate://gate-pass/";
+const QR_PREFIX = "staysync://gate-pass/";
 
 export const normalizeGateCredential = (value) => value.trim();
 

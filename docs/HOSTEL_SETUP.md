@@ -1,6 +1,6 @@
 # Hostel setup
 
-HostelMate is currently a single-institution system with multiple hostel
+StaySync is currently a single-institution system with multiple hostel
 buildings. Administrators create the buildings before onboarding students,
 creating rooms, or assigning staff.
 

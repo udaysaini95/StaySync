@@ -11,11 +11,11 @@ import {
 
 test("secure gate verification accepts one bounded credential", () => {
   const result = secureGatePassVerificationSchema.body.safeParse({
-    credential: `  hostelmate://gate-pass/${"A".repeat(43)}  `,
+    credential: `  staysync://gate-pass/${"A".repeat(43)}  `,
   });
 
   assert.equal(result.success, true);
-  assert.equal(result.data.credential.startsWith("hostelmate://"), true);
+  assert.equal(result.data.credential.startsWith("staysync://"), true);
 });
 
 test("outside roster validation supports pagination and overdue filtering", () => {

@@ -77,7 +77,7 @@ const runIntegrationTests = async () => {
         NODE_ENV: "test",
         DATABASE_URL: testDatabase.url,
         TEST_DATABASE_URL: testDatabase.url,
-        JWT_SECRET: "hostelmate-integration-test-secret-only",
+        JWT_SECRET: "staysync-integration-test-secret-only",
         JWT_EXPIRES_IN: "1h",
         CORS_ALLOWED_ORIGINS: "http://localhost:5173",
       },

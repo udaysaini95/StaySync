@@ -19,7 +19,7 @@ const TOKEN_CONFIG = Object.freeze({
 
 const TEST_USER = Object.freeze({
   id: 42,
-  email: "student.h1@hostelmate.example",
+  email: "student.h1@staysync.example",
   role: USER_ROLES.STUDENT,
 });
 

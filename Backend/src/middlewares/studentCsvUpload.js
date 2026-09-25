@@ -30,7 +30,7 @@ const acceptCsvFile = (_request, file, callback) => {
     new ApiError(
       415,
       "CSV_FILE_TYPE_REQUIRED",
-      "Upload a CSV file using the HostelMate template"
+      "Upload a CSV file using the StaySync template"
     ),
     false
   );

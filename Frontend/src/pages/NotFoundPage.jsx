@@ -19,7 +19,7 @@ const NotFoundPage = () => {
         <h1 id="not-found-title">This page does not exist</h1>
         <p>
           The address may be incorrect, or the page may have moved to a different
-          part of HostelMate.
+          part of StaySync.
         </p>
         <div className="hm-route-message__actions">
           <ButtonLink to={destination} variant="primary">

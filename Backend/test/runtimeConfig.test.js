@@ -12,7 +12,7 @@ import {
 } from "../src/config/runtimeConfig.js";
 
 const VALID_DATABASE_URL =
-  "postgresql://hostelmate:secret@db.example.test:5432/hostelmate";
+  "postgresql://staysync:secret@db.example.test:5432/staysync";
 const VALID_JWT_SECRET = "a".repeat(JWT_SECRET_MIN_LENGTH);
 
 test("runtime configuration parses valid values", () => {
@@ -84,7 +84,7 @@ test("runtime configuration validates database protocol, port, and environment",
   assert.throws(
     () =>
       parseRuntimeConfig({
-        DATABASE_URL: "https://db.example.test/hostelmate",
+        DATABASE_URL: "https://db.example.test/staysync",
         JWT_SECRET: VALID_JWT_SECRET,
         PORT: "70000",
         NODE_ENV: "staging",

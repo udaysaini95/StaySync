@@ -121,7 +121,7 @@ const StudentActivationRequest = () => {
               </div>
 
               <div className="hm-activation-card__notice">
-                HostelMate verifies an existing institutional email address. It
+                StaySync verifies an existing institutional email address. It
                 does not create a new email account.
               </div>
 

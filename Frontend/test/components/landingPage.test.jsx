@@ -28,7 +28,7 @@ describe("public landing page", () => {
     expect(
       screen.getAllByRole("link", { name: /Activate student account/i })[0]
     ).toHaveAttribute("href", "/register");
-    expect(screen.getByLabelText("Sample HostelMate records")).toHaveTextContent(
+    expect(screen.getByLabelText("Sample StaySync records")).toHaveTextContent(
       "PRODUCT PREVIEW · SAMPLE RECORDS"
     );
     expect(screen.getByText("One mess operation per hostel")).toBeVisible();

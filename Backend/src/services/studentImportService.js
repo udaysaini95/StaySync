@@ -173,7 +173,7 @@ export const parseStudentImportCsv = (source) => {
       422,
       "CSV_HEADER_INVALID",
       `The CSV header must contain exactly: ${STUDENT_IMPORT_COLUMNS.join(", ")}`,
-      { file: "Download and use the current HostelMate CSV template" }
+      { file: "Download and use the current StaySync CSV template" }
     );
   }
 

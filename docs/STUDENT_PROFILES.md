@@ -19,7 +19,7 @@ Example response:
   "profile": {
     "userId": 5,
     "name": "Kavya Nair",
-    "email": "student.h1@hostelmate.example",
+    "email": "student.h1@staysync.example",
     "accountStatus": "active",
     "rollNo": "DEMO-H1-001",
     "phone": "0000000001",

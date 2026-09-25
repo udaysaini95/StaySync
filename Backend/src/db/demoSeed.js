@@ -58,7 +58,7 @@ export const DEMO_ROOMS = Object.freeze([
 export const DEMO_USERS = Object.freeze([
   Object.freeze({
     name: "Mira Sen",
-    email: "admin@hostelmate.example",
+    email: "admin@staysync.example",
     role: USER_ROLES.ADMIN,
     employeeNo: "DEMO-ADM-001",
     phone: "0000000100",
@@ -68,7 +68,7 @@ export const DEMO_USERS = Object.freeze([
   }),
   Object.freeze({
     name: "Neha Kapoor",
-    email: "warden.h1@hostelmate.example",
+    email: "warden.h1@staysync.example",
     role: USER_ROLES.WARDEN,
     employeeNo: "DEMO-WDN-001",
     phone: "0000000101",
@@ -78,7 +78,7 @@ export const DEMO_USERS = Object.freeze([
   }),
   Object.freeze({
     name: "Arjun Das",
-    email: "maintenance@hostelmate.example",
+    email: "maintenance@staysync.example",
     role: USER_ROLES.MAINTENANCE,
     employeeNo: "DEMO-MNT-001",
     phone: "0000000102",
@@ -88,7 +88,7 @@ export const DEMO_USERS = Object.freeze([
   }),
   Object.freeze({
     name: "Rohan Iyer",
-    email: "guard.h2@hostelmate.example",
+    email: "guard.h2@staysync.example",
     role: USER_ROLES.GUARD,
     employeeNo: "DEMO-GRD-001",
     phone: "0000000103",
@@ -98,7 +98,7 @@ export const DEMO_USERS = Object.freeze([
   }),
   Object.freeze({
     name: "Kavya Nair",
-    email: "student.h1@hostelmate.example",
+    email: "student.h1@staysync.example",
     role: USER_ROLES.STUDENT,
     housingType: STUDENT_HOUSING_TYPES.BOYS,
     rollNo: "DEMO-H1-001",
@@ -112,7 +112,7 @@ export const DEMO_USERS = Object.freeze([
   }),
   Object.freeze({
     name: "Dev Patel",
-    email: "student.h2@hostelmate.example",
+    email: "student.h2@staysync.example",
     role: USER_ROLES.STUDENT,
     housingType: STUDENT_HOUSING_TYPES.GIRLS,
     rollNo: "DEMO-H2-001",
@@ -362,7 +362,7 @@ export const seedDemoData = async (database, password) => {
       });
   }
 
-  const allocationActorId = userIds.get("admin@hostelmate.example");
+  const allocationActorId = userIds.get("admin@staysync.example");
 
   for (const user of DEMO_USERS.filter((entry) => entry.room)) {
     const studentProfileId = studentProfileIds.get(user.email);

@@ -1,4 +1,4 @@
-# 🏥 **HostelMate** - Hostel Management System
+# 🏥 **StaySync** - Hostel Management System
 
 A comprehensive MERN stack application designed to streamline hostel operations, including student complaints, mess management, leave requests, and administrative reporting.
 

@@ -147,5 +147,5 @@ module.
 
 The same cleanup removed three unused duplicate auth pages, their unreachable
 dashboard hook, the unused `App.css`, and Vite/React starter artwork. The HTML
-entry now contains the HostelMate title and imports global styles only through
+entry now contains the StaySync title and imports global styles only through
 the JavaScript entry point.

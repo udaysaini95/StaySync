@@ -37,7 +37,7 @@ const actionableStatuses = Object.freeze([
   COMPLAINT_STATUSES.IN_PROGRESS,
 ]);
 const monitorActor = Object.freeze({
-  name: "HostelMate SLA monitor",
+  name: "StaySync SLA monitor",
   role: "system",
 });
 

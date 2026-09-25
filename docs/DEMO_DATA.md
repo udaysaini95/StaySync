@@ -1,4 +1,4 @@
-# HostelMate Demo Data
+# StaySync Demo Data
 
 The demo seed is deterministic, fictional, and intended only for local or dedicated demo databases. All accounts use the reserved `.example` domain and must never be treated as real email inboxes.
 
@@ -35,11 +35,11 @@ The password is the configured `DEMO_SEED_PASSWORD`; there is no fallback passwo
 
 | Role | Email | Hostel access |
 | --- | --- | --- |
-| Admin | `admin@hostelmate.example` | Institution-wide |
-| Warden | `warden.h1@hostelmate.example` | H1 |
-| Maintenance | `maintenance@hostelmate.example` | H1 and H2 |
-| Guard | `guard.h2@hostelmate.example` | H2 |
-| Student | `student.h1@hostelmate.example` | H1, room 101 |
-| Student | `student.h2@hostelmate.example` | H2, room 204 |
+| Admin | `admin@staysync.example` | Institution-wide |
+| Warden | `warden.h1@staysync.example` | H1 |
+| Maintenance | `maintenance@staysync.example` | H1 and H2 |
+| Guard | `guard.h2@staysync.example` | H2 |
+| Student | `student.h1@staysync.example` | H1, room 101 |
+| Student | `student.h2@staysync.example` | H2, room 204 |
 
 The two hostel records are `H1` / North Residence Hall and `H2` / South Residence Hall. H1 contains rooms 101 and 102; H2 contains room 204. Every room has a demo capacity of two residents.

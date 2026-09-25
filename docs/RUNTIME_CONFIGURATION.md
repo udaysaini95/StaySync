@@ -1,4 +1,4 @@
-# HostelMate Runtime Configuration
+# StaySync Runtime Configuration
 
 The API validates its runtime configuration before accepting requests. Missing credentials, placeholder values, malformed database URLs, weak JWT secrets, and invalid ports stop startup with a consolidated error message.
 

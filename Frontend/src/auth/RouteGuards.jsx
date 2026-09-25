@@ -16,7 +16,7 @@ const SessionCheck = ({ embedded = false }) => {
     >
       <LoaderCircle className="hm-session-gate__spinner" aria-hidden="true" />
       <h1>Checking your session</h1>
-      <p>Please wait while HostelMate confirms your account.</p>
+      <p>Please wait while StaySync confirms your account.</p>
     </Panel>
   );
 

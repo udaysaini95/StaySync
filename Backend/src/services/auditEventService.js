@@ -215,7 +215,7 @@ export const appendAuditEvent = async (database, event) =>
 
 const slaMonitorActor = Object.freeze({
   userId: null,
-  name: "HostelMate SLA monitor",
+  name: "StaySync SLA monitor",
   email: null,
   role: "system",
 });

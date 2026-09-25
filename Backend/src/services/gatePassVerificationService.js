@@ -15,7 +15,7 @@ import { USER_ROLES } from "../domain/roles.js";
 import { ApiError } from "../utils/apiErrors.js";
 import { hashSecureToken } from "./secureTokenService.js";
 
-const QR_PREFIX = "hostelmate://gate-pass/";
+const QR_PREFIX = "staysync://gate-pass/";
 const TOKEN_PATTERN = /^[A-Za-z0-9_-]{43}$/;
 const verifierRoles = new Set([USER_ROLES.GUARD, USER_ROLES.ADMIN]);
 

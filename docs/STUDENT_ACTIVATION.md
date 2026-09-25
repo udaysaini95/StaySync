@@ -10,7 +10,7 @@ This gives the system three independent controls:
 2. The matching roll number prevents activation using an email address alone.
 3. The emailed token proves control of the approved address.
 
-HostelMate does not create Gmail or institutional mailboxes. It links an existing address to the approved student record.
+StaySync does not create Gmail or institutional mailboxes. It links an existing address to the approved student record.
 
 ## API flow
 
@@ -133,9 +133,9 @@ Activation tokens are never returned by the API or written to logs. Configure th
 SMTP_HOST=smtp.example.edu
 SMTP_PORT=587
 SMTP_SECURE=false
-SMTP_USER=hostelmate@example.edu
+SMTP_USER=staysync@example.edu
 SMTP_PASSWORD=provider-specific-secret
-EMAIL_FROM=HostelMate <hostelmate@example.edu>
+EMAIL_FROM=StaySync <staysync@example.edu>
 STUDENT_ACTIVATION_URL=https://hostel.example.edu/activate-student
 ```
 

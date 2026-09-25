@@ -84,7 +84,7 @@ export const renderGatePassPdf = async ({
   const document = new PDFDocument({ size: "A4", margin: 48 });
   const output = collectPdf(document);
 
-  document.font("Helvetica-Bold").fontSize(19).text("HOSTELMATE", {
+  document.font("Helvetica-Bold").fontSize(19).text("STAYSYNC", {
     align: "center",
   });
   document.fontSize(13).text("Approved Student Gate Pass", { align: "center" });
@@ -120,7 +120,7 @@ export const renderGatePassPdf = async ({
     .fontSize(9)
     .fillColor("#4b5563")
     .text(
-      "This pass is valid only when the live HostelMate record is active. Gate staff must verify it before recording movement.",
+      "This pass is valid only when the live StaySync record is active. Gate staff must verify it before recording movement.",
       { align: "center" }
     );
   document.end();
@@ -176,7 +176,7 @@ export const issueGatePass = async (
     let pdfBuffer;
 
     try {
-      const payload = `hostelmate://gate-pass/${token}`;
+      const payload = `staysync://gate-pass/${token}`;
       qrBuffer = await renderQr(payload);
       pdfBuffer = await renderPdf({
         leaveRequest,
@@ -414,7 +414,7 @@ export const readGatePassArtifact = async (
     return {
       contents: await storage.read(storageKey),
       mimeType: isQr ? "image/png" : "application/pdf",
-      filename: `hostelmate-gate-pass-${record.leaveRequestId}.${
+      filename: `staysync-gate-pass-${record.leaveRequestId}.${
         isQr ? "png" : "pdf"
       }`,
     };

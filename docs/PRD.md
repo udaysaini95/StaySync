@@ -1,8 +1,8 @@
-# HostelMate Product Requirements Document
+# StaySync Product Requirements Document
 
 | Field | Value |
 | --- | --- |
-| Product | HostelMate — Hostel Operations and Gate Security Platform |
+| Product | StaySync — Hostel Operations and Gate Security Platform |
 | Document version | 1.0 |
 | Status | Approved baseline for implementation planning |
 | Date | 2026-09-01 |
@@ -11,7 +11,7 @@
 
 ## 1. Executive summary
 
-HostelMate is a multi-role web platform for managing hostel residents, room information, maintenance complaints, leave approvals, gate movements, mess operations, notices, and operational reporting.
+StaySync is a multi-role web platform for managing hostel residents, room information, maintenance complaints, leave approvals, gate movements, mess operations, notices, and operational reporting.
 
 The product replaces fragmented paper registers, spreadsheets, messaging groups, and verbal approvals with traceable digital workflows. Its two flagship workflows are:
 

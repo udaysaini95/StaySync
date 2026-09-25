@@ -1,4 +1,4 @@
-# HostelMate Engineering Implementation Plan
+# StaySync Engineering Implementation Plan
 
 | Field | Value |
 | --- | --- |
@@ -11,7 +11,7 @@
 
 ## 1. Purpose
 
-This plan converts the HostelMate PRD into a sequence of small engineering changes. It is intentionally ordered so that security, data integrity, and reproducibility are established before large feature work.
+This plan converts the StaySync PRD into a sequence of small engineering changes. It is intentionally ordered so that security, data integrity, and reproducibility are established before large feature work.
 
 Only one numbered slice should be implemented at a time. A slice must be verified and committed before the next slice begins unless the user explicitly requests otherwise.
 
@@ -136,7 +136,7 @@ Phase 1 exit gate:
 | --- | --- | --- | --- | --- |
 | FE-01 | Reconfirm and remove/archive disconnected legacy frontend code; remove unused starter assets | Maintainability 14.5, design Sections 3 and 16 | Import/route inventory, lint, and build confirm active UI remains intact | `refactor(frontend): remove disconnected legacy interface` |
 | FE-02 | Centralize environment, API, upload, and asset URL construction | API Section 11, launch criteria | No active component contains a localhost URL; environment tests/build pass | `refactor(frontend): centralize service URLs` |
-| FE-03 | Implement design tokens and shared primitives from the design guidelines | UX Section 13, design Sections 4, 8, 16 | Component examples/tests cover variants and keyboard/focus behavior | `feat(ui): establish HostelMate design system` |
+| FE-03 | Implement design tokens and shared primitives from the design guidelines | UX Section 13, design Sections 4, 8, 16 | Component examples/tests cover variants and keyboard/focus behavior | `feat(ui): establish StaySync design system` |
 | FE-04 | Implement public and authenticated application shells with responsive navigation | Design Sections 5–7 | Visual checks at 360/768/1024/1440; navigation matches roles | `feat(ui): add responsive role-based application shells` |
 | FE-05 | Add auth bootstrap, `/me` integration, protected routes, and unauthorized/404 pages | AUTH-06–AUTH-08 | Direct URL and session-expiry route tests pass for every role | `feat(frontend): protect routes by session and role` |
 | FE-06 | Add shared loading, empty, error, unauthorized, toast, and confirmation patterns | Design Sections 8–9 | Component tests distinguish failed data from genuine empty data | `feat(ui): add reusable application feedback states` |
@@ -270,7 +270,7 @@ Phase 7 exit gate:
 | CI-01 | Add CI for lint, typecheck, tests, build, migration checks, and security scans | Quality gates 15.3, Success 16.2 | Pull request workflow passes and fails intentionally broken checks | `ci: add full quality and security pipeline` |
 | DEPLOY-01 | Add production containers/config and deploy frontend, API, database, object storage | Milestone E, launch criteria | Clean staging deployment and smoke/E2E tests pass | `chore(deploy): add production deployment configuration` |
 | DOC-01 | Replace stale README and add ERD, architecture, API setup, demos, decisions, screenshots, and license | Success 16.2, launch criteria | Fresh-clone walkthrough succeeds using documentation only | `docs: publish complete project documentation` |
-| RELEASE-01 | Final visual, accessibility, performance, security, and launch-criteria audit | PRD Section 19, design Section 18 | Every launch criterion is checked with evidence | `chore(release): prepare HostelMate resume-grade release` |
+| RELEASE-01 | Final visual, accessibility, performance, security, and launch-criteria audit | PRD Section 19, design Section 18 | Every launch criterion is checked with evidence | `chore(release): prepare StaySync resume-grade release` |
 
 ## 7. Requirement coverage map
 

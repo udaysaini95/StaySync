@@ -19,13 +19,13 @@ const users = Object.freeze({
   admin: {
     id: 1,
     name: "Mira Sen",
-    email: "admin@hostelmate.example",
+    email: "admin@staysync.example",
     role: "admin",
   },
   warden: {
     id: 2,
     name: "Neel Shah",
-    email: "warden.h1@hostelmate.example",
+    email: "warden.h1@staysync.example",
     role: "warden",
   },
 });

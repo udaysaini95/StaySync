@@ -15,7 +15,7 @@ const leaveRequest = {
 
 test("gate pass renderers create valid PNG and PDF buffers", async () => {
   const token = "test-token-that-is-never-written-to-the-database";
-  const qrBuffer = await renderGatePassQr(`hostelmate://gate-pass/${token}`);
+  const qrBuffer = await renderGatePassQr(`staysync://gate-pass/${token}`);
   const pdfBuffer = await renderGatePassPdf({
     leaveRequest,
     token,

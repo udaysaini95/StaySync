@@ -30,7 +30,7 @@ test("authentication middleware attaches verified session claims", () => {
   const authenticatedUser = Object.freeze({
     id: 42,
     role: "student",
-    email: "student.h1@hostelmate.example",
+    email: "student.h1@staysync.example",
   });
   const protect = createProtectMiddleware((token) => {
     assert.equal(token, "valid-token");

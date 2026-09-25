@@ -57,7 +57,7 @@ const LoginPage = () => {
         <Panel className="space-y-6">
           <div>
             <h1 className="text-section-title font-bold text-text-primary">
-              Sign in to HostelMate
+              Sign in to StaySync
             </h1>
             <p className="mt-1 text-small text-text-secondary">
               Use your assigned student or staff email.

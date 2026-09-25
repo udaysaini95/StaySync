@@ -13,7 +13,7 @@ const EMAIL_ENVIRONMENT = {
   SMTP_SECURE: "false",
   SMTP_USER: "mailer",
   SMTP_PASSWORD: "secret",
-  EMAIL_FROM: "HostelMate <no-reply@example.test>",
+  EMAIL_FROM: "StaySync <no-reply@example.test>",
   STUDENT_ACTIVATION_URL: "http://localhost:5173/activate-student",
 };
 

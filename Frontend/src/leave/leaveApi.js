@@ -25,7 +25,7 @@ export const downloadGatePassPdf = async (leaveRequestId) => {
   const link = document.createElement("a");
 
   link.href = objectUrl;
-  link.download = `hostelmate-gate-pass-${leaveRequestId}.pdf`;
+  link.download = `staysync-gate-pass-${leaveRequestId}.pdf`;
   document.body.appendChild(link);
   link.click();
   link.remove();

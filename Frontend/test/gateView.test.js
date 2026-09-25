@@ -16,7 +16,7 @@ test("gate credentials accept secure tokens and QR payloads only", () => {
   const token = "A".repeat(43);
 
   assert.equal(validateGateCredential(token), "");
-  assert.equal(validateGateCredential(`hostelmate://gate-pass/${token}`), "");
+  assert.equal(validateGateCredential(`staysync://gate-pass/${token}`), "");
   assert.match(validateGateCredential("LP-1234"), /43-character/);
 });
 

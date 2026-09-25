@@ -72,7 +72,7 @@ Copy `.env.test.example` to `.env.test` and provide a dedicated PostgreSQL
 database when Docker is not available:
 
 ```dotenv
-TEST_DATABASE_URL=postgresql://postgres:postgres@127.0.0.1:5432/hostelmate_test
+TEST_DATABASE_URL=postgresql://postgres:postgres@127.0.0.1:5432/staysync_test
 ```
 
 The configured user must own that test database because the harness recreates
@@ -86,7 +86,7 @@ Before any schema is reset, the runner:
 
 1. Reads only `TEST_DATABASE_URL`; it never falls back to `DATABASE_URL`.
 2. Requires the database name to contain a separate `test` segment, such as
-   `hostelmate_test` or `test-hostelmate`.
+   `staysync_test` or `test-staysync`.
 3. Rejects a target with the same host, port, and database name as the configured
    development database.
 4. Takes a PostgreSQL advisory lock so two suites cannot reset the same test

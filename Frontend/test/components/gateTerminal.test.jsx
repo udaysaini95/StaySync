@@ -24,7 +24,7 @@ vi.mock("../../src/feedback/toastContext.js", () => ({
 vi.mock("../../src/gate/GateScanner.jsx", () => ({
   GateScanner: ({ onScan, onClose }) => (
     <div>
-      <button onClick={() => onScan(`hostelmate://gate-pass/${"A".repeat(43)}`)}>
+      <button onClick={() => onScan(`staysync://gate-pass/${"A".repeat(43)}`)}>
         Complete test scan
       </button>
       <button onClick={onClose}>Close test scanner</button>
@@ -188,7 +188,7 @@ describe("guard security terminal", () => {
 
     await waitFor(() => {
       expect(apiMocks.verifyGatePass).toHaveBeenCalledWith(
-        `hostelmate://gate-pass/${"A".repeat(43)}`
+        `staysync://gate-pass/${"A".repeat(43)}`
       );
     });
   });

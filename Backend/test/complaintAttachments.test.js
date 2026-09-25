@@ -58,7 +58,7 @@ test("complaint image inspection rejects MIME spoofing and unsafe sizes", () => 
 });
 
 test("private storage reads controlled keys and blocks path traversal", async () => {
-  const rootDirectory = await mkdtemp(join(tmpdir(), "hostelmate-files-"));
+  const rootDirectory = await mkdtemp(join(tmpdir(), "staysync-files-"));
   const storage = createPrivateFileStorage({ rootDirectory });
   const storageKey = "complaints/12/test-image.png";
 

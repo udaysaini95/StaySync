@@ -1,6 +1,6 @@
-# HostelMate Authorization Model
+# StaySync Authorization Model
 
-HostelMate uses three server-side authorization layers. The browser is never an authority for role or ownership decisions.
+StaySync uses three server-side authorization layers. The browser is never an authority for role or ownership decisions.
 
 1. Authentication verifies the signed access token and creates `req.user` from validated claims.
 2. Permission middleware checks a named capability against the canonical role matrix.

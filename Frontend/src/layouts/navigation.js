@@ -160,5 +160,5 @@ export const getRouteTitle = (pathname) => {
     return "Complaint details";
   }
 
-  return routeTitles[pathname] ?? "HostelMate";
+  return routeTitles[pathname] ?? "StaySync";
 };

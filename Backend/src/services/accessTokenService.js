@@ -3,8 +3,8 @@ import jwt from "jsonwebtoken";
 import { getRuntimeConfig } from "../config/runtimeConfig.js";
 import { USER_ROLES } from "../domain/roles.js";
 
-export const ACCESS_TOKEN_ISSUER = "hostelmate-api";
-export const ACCESS_TOKEN_AUDIENCE = "hostelmate-web";
+export const ACCESS_TOKEN_ISSUER = "staysync-api";
+export const ACCESS_TOKEN_AUDIENCE = "staysync-web";
 export const ACCESS_TOKEN_TYPE = "access";
 export const ACCESS_TOKEN_ALGORITHM = "HS256";
 

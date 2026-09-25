@@ -1,4 +1,4 @@
-# HostelMate Frontend Design Guidelines
+# StaySync Frontend Design Guidelines
 
 | Field | Value |
 | --- | --- |
@@ -10,14 +10,14 @@
 
 ## 1. Purpose
 
-This document is the mandatory visual and interaction specification for HostelMate. All new frontend work and all redesign work must follow it.
+This document is the mandatory visual and interaction specification for StaySync. All new frontend work and all redesign work must follow it.
 
 The interface must look like a deliberately designed operational product for a real hostel. It must not look like a collection of AI-generated dashboard sections, a generic SaaS template, a design-dribbble experiment, or a set of unrelated Tailwind snippets.
 
 When a design decision is not covered here, choose the option that is:
 
 1. Clearer for the user's current task.
-2. More consistent with an existing HostelMate pattern.
+2. More consistent with an existing StaySync pattern.
 3. More restrained visually.
 4. Easier to use with a keyboard and on a small screen.
 
@@ -25,7 +25,7 @@ Do not invent a new visual pattern merely to make a page look different.
 
 ## 2. Product design character
 
-HostelMate should feel:
+StaySync should feel:
 
 - Trustworthy.
 - Calm.
@@ -35,7 +35,7 @@ HostelMate should feel:
 - Fast to scan.
 - Suitable for daily use.
 
-HostelMate should not feel:
+StaySync should not feel:
 
 - Futuristic or cyberpunk.
 - Luxurious or decorative.
@@ -607,7 +607,7 @@ Purpose: explain the product and provide sign-in/student registration.
   the same neutral success message, whether or not a record matches.
 - The emailed activation link opens a focused password-setup page that clearly
   handles invalid, expired, already-used, and successful tokens.
-- Do not imply that HostelMate creates an institutional email address. It only
+- Do not imply that StaySync creates an institutional email address. It only
   verifies control of an address already approved by the institution.
 
 ### 10.3 Student overview
@@ -905,7 +905,7 @@ Every frontend pull request must satisfy the applicable items:
 - [ ] No vague marketing copy.
 - [ ] No random colored icon containers.
 - [ ] No unsupported chart or trend.
-- [ ] Page looks like part of HostelMate rather than a newly generated template.
+- [ ] Page looks like part of StaySync rather than a newly generated template.
 
 ## 19. Definition of frontend design done
 

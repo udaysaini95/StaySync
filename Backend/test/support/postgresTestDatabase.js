@@ -23,10 +23,10 @@ const migrationsDirectory = fileURLToPath(
 );
 
 const TEST_DATABASE_NAME_PATTERN = /(^|[-_])test(?:s|ing)?($|[-_])/i;
-const TEST_DATABASE_LOCK_NAME = "hostelmate-postgres-integration-tests";
-const DOCKER_DATABASE_NAME = "hostelmate_test";
-const DOCKER_DATABASE_USER = "hostelmate_test";
-const DOCKER_DATABASE_PASSWORD = "hostelmate_test_password";
+const TEST_DATABASE_LOCK_NAME = "staysync-postgres-integration-tests";
+const DOCKER_DATABASE_NAME = "staysync_test";
+const DOCKER_DATABASE_USER = "staysync_test";
+const DOCKER_DATABASE_PASSWORD = "staysync_test_password";
 
 export class TestDatabaseSafetyError extends Error {
   constructor(message) {
@@ -93,7 +93,7 @@ export const validateTestDatabaseTarget = ({
 
   if (!TEST_DATABASE_NAME_PATTERN.test(testTarget.databaseName)) {
     throw new TestDatabaseSafetyError(
-      "The TEST_DATABASE_URL database name must contain a separate test segment, such as hostelmate_test."
+      "The TEST_DATABASE_URL database name must contain a separate test segment, such as staysync_test."
     );
   }
 
@@ -155,7 +155,7 @@ const runProcess = (command, argumentsList, { captureOutput = false } = {}) =>
   });
 
 const startDockerDatabase = async () => {
-  const projectName = `hostelmate-test-${process.pid}-${Date.now().toString(36)}`;
+  const projectName = `staysync-test-${process.pid}-${Date.now().toString(36)}`;
   const composeArguments = [
     "compose",
     "--file",

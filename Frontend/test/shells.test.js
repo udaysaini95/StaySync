@@ -135,7 +135,7 @@ test("utility-bar titles describe every implemented authenticated route", () => 
   assert.equal(getRouteTitle("/guard/terminal"), "Gate terminal");
   assert.equal(getRouteTitle("/guard/dashboard"), "Overview");
   assert.equal(getRouteTitle("/notices"), "Notices");
-  assert.equal(getRouteTitle("/not-yet-defined"), "HostelMate");
+  assert.equal(getRouteTitle("/not-yet-defined"), "StaySync");
 });
 
 test("shell styles preserve the documented dimensions and breakpoints", async () => {

@@ -7,11 +7,11 @@ export const buildStudentActivationEmail = (config, activation) => {
   return {
     from: config.from,
     to: activation.email,
-    subject: "Activate your HostelMate student account",
+    subject: "Activate your StaySync student account",
     text: [
       `Hello ${activation.name},`,
       "",
-      "Your student record has been approved for HostelMate.",
+      "Your student record has been approved for StaySync.",
       `Activate your account within 30 minutes: ${url.toString()}`,
       "",
       "If you did not request this email, you can ignore it.",

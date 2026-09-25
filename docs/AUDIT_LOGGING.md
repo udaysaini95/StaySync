@@ -1,6 +1,6 @@
-# HostelMate Audit Logging
+# StaySync Audit Logging
 
-HostelMate keeps security and workflow history in a dedicated append-only audit
+StaySync keeps security and workflow history in a dedicated append-only audit
 log. The log is separate from feature timelines: a complaint timeline explains
 the complaint to its participants, while an audit event records who changed a
 sensitive resource for operational review.

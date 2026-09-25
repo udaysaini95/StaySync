@@ -874,7 +874,7 @@ const ApprovedStudents = () => {
             autoComplete="email"
             maxLength={255}
             placeholder="asha.rao@college.edu"
-            hint="HostelMate verifies this existing address; it does not create an email account."
+            hint="StaySync verifies this existing address; it does not create an email account."
             required
             value={approvalForm.email}
             error={approvalErrors.email}

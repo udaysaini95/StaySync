@@ -7,9 +7,12 @@ export const AUTH_STATUS = Object.freeze({
   UNAVAILABLE: "unavailable",
 });
 
-export const SESSION_ENDED_EVENT = "hostelmate:session-ended";
+export const SESSION_ENDED_EVENT = "staysync:session-ended";
+
+
 
 const storageKeys = Object.freeze({
+
   token: "token",
   role: "role",
   user: "user",

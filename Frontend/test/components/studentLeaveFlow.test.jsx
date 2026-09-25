@@ -58,7 +58,7 @@ describe("student leave and gate-pass flow", () => {
       await screen.findByRole("heading", { name: "Approved" })
     ).toBeVisible();
     expect(
-      await screen.findByAltText("QR code for the current HostelMate gate pass")
+      await screen.findByAltText("QR code for the current StaySync gate pass")
     ).toHaveAttribute("src", "blob:private-gate-pass");
     expect(screen.getAllByText("Family function in Pune")).toHaveLength(2);
     expect(apiMocks.listMyLeaveRequests).toHaveBeenCalledWith({

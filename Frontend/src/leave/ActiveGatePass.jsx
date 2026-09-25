@@ -99,7 +99,7 @@ export const ActiveGatePass = ({ leave }) => {
           ) : (
             <img
               src={qrUrl}
-              alt="QR code for the current HostelMate gate pass"
+              alt="QR code for the current StaySync gate pass"
             />
           )}
         </div>

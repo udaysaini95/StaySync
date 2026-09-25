@@ -365,7 +365,7 @@ test("authoritative verification returns one server-owned gate action", async ()
   const qrResult = await verifySecureGatePass(
     database,
     { id: firstGuard.id, role: USER_ROLES.GUARD },
-    `hostelmate://gate-pass/${firstGatePassToken}`,
+    `staysync://gate-pass/${firstGatePassToken}`,
     { now: new Date("2026-11-10T10:00:00.000Z") }
   );
   const manualResult = await verifySecureGatePass(
@@ -713,7 +713,7 @@ test("exit and return are atomic and idempotent under concurrent scans", async (
   );
 
   const returnInput = {
-    credential: `hostelmate://gate-pass/${secondGatePassToken}`,
+    credential: `staysync://gate-pass/${secondGatePassToken}`,
     action: "return",
     idempotencyKey: "gate-return-idempotency-001",
   };

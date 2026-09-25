@@ -10,11 +10,11 @@ export const ProductBrand = ({ to = "/", compact = false, onClick }) => (
       "hm-product-brand",
       compact && "hm-product-brand--compact"
     )}
-    aria-label="HostelMate home"
+    aria-label="StaySync home"
   >
     <span className="hm-product-brand__mark" aria-hidden="true">
       <Building2 />
     </span>
-    <span className="hm-product-brand__name">HostelMate</span>
+    <span className="hm-product-brand__name">StaySync</span>
   </Link>
 );

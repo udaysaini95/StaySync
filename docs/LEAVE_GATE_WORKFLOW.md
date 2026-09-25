@@ -126,7 +126,7 @@ as unknown IDs to avoid leaking another hostel's records.
 
 GATE-01 adds `POST /api/gate/passes/verify` for active guards and
 administrators. The body contains one `credential`, which may be the complete
-manual token printed on the PDF or the `hostelmate://gate-pass/...` value read
+manual token printed on the PDF or the `staysync://gate-pass/...` value read
 from its QR code. The legacy `/api/gate/verify` endpoint remains temporarily
 available to the old frontend and is not part of the normalized workflow.
 

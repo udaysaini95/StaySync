@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }) => {
       const user = normalizeSessionUser(response.data);
 
       if (!user) {
-        signOut("HostelMate could not verify your account. Please sign in again.");
+        signOut("StaySync could not verify your account. Please sign in again.");
         return;
       }
 
@@ -73,7 +73,7 @@ export const AuthProvider = ({ children }) => {
         ...currentState,
         status: AUTH_STATUS.UNAVAILABLE,
         message:
-          "HostelMate could not verify your session. Check the server connection and try again.",
+          "StaySync could not verify your session. Check the server connection and try again.",
       }));
     }
   }, [signOut]);

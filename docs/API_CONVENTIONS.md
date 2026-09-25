@@ -1,4 +1,4 @@
-# HostelMate API Conventions
+# StaySync API Conventions
 
 This document describes the request-validation and error-response rules used by
 the current API. New endpoints should follow the same rules so clients do not
@@ -69,7 +69,7 @@ text, for conditional behavior.
 
 ## Status codes
 
-| Status | Meaning in HostelMate |
+| Status | Meaning in StaySync |
 | --- | --- |
 | `400` | The request could not be parsed, such as malformed JSON. |
 | `401` | Authentication is missing, invalid, or expired. |

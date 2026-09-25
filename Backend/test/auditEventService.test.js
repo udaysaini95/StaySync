@@ -226,7 +226,7 @@ test("SLA monitor audit events use a fixed non-user identity", async () => {
   });
 
   assert.equal(insertedEvent.actorUserId, null);
-  assert.equal(insertedEvent.actorName, "HostelMate SLA monitor");
+  assert.equal(insertedEvent.actorName, "StaySync SLA monitor");
   assert.equal(insertedEvent.actorRole, "system");
 });
 

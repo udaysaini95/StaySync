@@ -2,7 +2,7 @@
 
 ## Identity approach
 
-HostelMate does not create Gmail or institutional mailboxes. The institution creates or approves those addresses outside the application, and HostelMate links each existing address to one account. Every role signs in through the same email-and-password endpoint; the server derives the role and hostel access from persisted records.
+StaySync does not create Gmail or institutional mailboxes. The institution creates or approves those addresses outside the application, and StaySync links each existing address to one account. Every role signs in through the same email-and-password endpoint; the server derives the role and hostel access from persisted records.
 
 Public registration remains student-only. Warden, maintenance, and guard accounts require an administrator-issued invitation. Additional administrators are deliberately excluded from this endpoint and should use a separate high-assurance bootstrap or promotion process when that capability is implemented.
 

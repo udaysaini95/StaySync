@@ -1,4 +1,4 @@
-# HostelMate UI primitives
+# StaySync UI primitives
 
 This folder is the shared visual foundation for the frontend. Feature pages should
 import from `components/ui` and compose these primitives instead of copying long

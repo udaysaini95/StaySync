@@ -2,11 +2,11 @@ services:
   database:
     image: postgres:16-alpine
     environment:
-      POSTGRES_DB: hostelmate_test
-      POSTGRES_USER: hostelmate_test
-      POSTGRES_PASSWORD: hostelmate_test_password
+      POSTGRES_DB: staysync_test
+      POSTGRES_USER: staysync_test
+      POSTGRES_PASSWORD: staysync_test_password
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U hostelmate_test -d hostelmate_test"]
+      test: ["CMD-SHELL", "pg_isready -U staysync_test -d staysync_test"]
       interval: 1s
       timeout: 5s
       retries: 30

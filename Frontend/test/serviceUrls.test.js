@@ -39,32 +39,32 @@ test("service URLs use the current origin when no environment is configured", ()
 test("service URL configuration normalizes API and asset origins", () => {
   assert.deepEqual(
     createServiceUrlConfig({
-      VITE_API_BASE_URL: " https://api.hostelmate.example/ ",
+      VITE_API_BASE_URL: " https://api.staysync.example/ ",
     }),
     {
-      apiBaseUrl: "https://api.hostelmate.example",
-      assetBaseUrl: "https://api.hostelmate.example",
+      apiBaseUrl: "https://api.staysync.example",
+      assetBaseUrl: "https://api.staysync.example",
     }
   );
 
   assert.deepEqual(
     createServiceUrlConfig({
-      VITE_API_BASE_URL: "https://api.hostelmate.example",
-      VITE_ASSET_BASE_URL: "https://assets.hostelmate.example/",
+      VITE_API_BASE_URL: "https://api.staysync.example",
+      VITE_ASSET_BASE_URL: "https://assets.staysync.example/",
     }),
     {
-      apiBaseUrl: "https://api.hostelmate.example",
-      assetBaseUrl: "https://assets.hostelmate.example",
+      apiBaseUrl: "https://api.staysync.example",
+      assetBaseUrl: "https://assets.staysync.example",
     }
   );
 });
 
 test("service URL configuration rejects unsafe or ambiguous origins", () => {
   for (const value of [
-    "ftp://api.hostelmate.example",
-    "https://user:password@api.hostelmate.example",
-    "https://api.hostelmate.example/v1",
-    "https://api.hostelmate.example?region=one",
+    "ftp://api.staysync.example",
+    "https://user:password@api.staysync.example",
+    "https://api.staysync.example/v1",
+    "https://api.staysync.example?region=one",
     "not-a-url",
   ]) {
     assert.throws(

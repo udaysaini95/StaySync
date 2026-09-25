@@ -20,7 +20,7 @@ const activePass = {
 
 test("gate-pass credentials distinguish QR scans from controlled manual entry", () => {
   const manual = normalizeGatePassCredential(token);
-  const qr = normalizeGatePassCredential(`hostelmate://gate-pass/${token}`);
+  const qr = normalizeGatePassCredential(`staysync://gate-pass/${token}`);
 
   assert.equal(manual.verificationMethod, "manual");
   assert.equal(qr.verificationMethod, "qr");

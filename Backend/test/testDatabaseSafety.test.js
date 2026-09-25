@@ -8,12 +8,12 @@ import {
 test("test database validation accepts a clearly named test database", () => {
   const target = validateTestDatabaseTarget({
     testDatabaseUrl:
-      "postgresql://tester:password@127.0.0.1:5432/hostelmate_test",
+      "postgresql://tester:password@127.0.0.1:5432/staysync_test",
     developmentDatabaseUrl:
-      "postgresql://developer:password@127.0.0.1:5432/hostelmate_dev",
+      "postgresql://developer:password@127.0.0.1:5432/staysync_dev",
   });
 
-  assert.equal(target.databaseName, "hostelmate_test");
+  assert.equal(target.databaseName, "staysync_test");
 });
 
 test("test database validation never falls back to a development URL", () => {
@@ -21,7 +21,7 @@ test("test database validation never falls back to a development URL", () => {
     () =>
       validateTestDatabaseTarget({
         developmentDatabaseUrl:
-          "postgresql://developer:password@localhost:5432/hostelmate_dev",
+          "postgresql://developer:password@localhost:5432/staysync_dev",
       }),
     (error) =>
       error instanceof TestDatabaseSafetyError &&
@@ -34,7 +34,7 @@ test("test database validation rejects ordinary database names", () => {
     () =>
       validateTestDatabaseTarget({
         testDatabaseUrl:
-          "postgresql://tester:password@localhost:5432/hostelmate",
+          "postgresql://tester:password@localhost:5432/staysync",
       }),
     (error) =>
       error instanceof TestDatabaseSafetyError &&
@@ -47,9 +47,9 @@ test("test database validation rejects the configured development database", () 
     () =>
       validateTestDatabaseTarget({
         testDatabaseUrl:
-          "postgresql://test_user:test_password@db.example.test:5432/hostelmate_test?sslmode=require",
+          "postgresql://test_user:test_password@db.example.test:5432/staysync_test?sslmode=require",
         developmentDatabaseUrl:
-          "postgresql://app_user:app_password@DB.EXAMPLE.TEST/hostelmate_test",
+          "postgresql://app_user:app_password@DB.EXAMPLE.TEST/staysync_test",
       }),
     (error) =>
       error instanceof TestDatabaseSafetyError &&
@@ -62,9 +62,9 @@ test("loopback aliases cannot bypass the development database check", () => {
     () =>
       validateTestDatabaseTarget({
         testDatabaseUrl:
-          "postgresql://tester:password@127.0.0.1:5432/hostelmate_test",
+          "postgresql://tester:password@127.0.0.1:5432/staysync_test",
         developmentDatabaseUrl:
-          "postgresql://developer:password@localhost/hostelmate_test",
+          "postgresql://developer:password@localhost/staysync_test",
       }),
     (error) =>
       error instanceof TestDatabaseSafetyError &&
@@ -78,7 +78,7 @@ test("test database validation does not reveal credentials in errors", () => {
   assert.throws(
     () =>
       validateTestDatabaseTarget({
-        testDatabaseUrl: `https://tester:${secretPassword}@localhost/hostelmate_test`,
+        testDatabaseUrl: `https://tester:${secretPassword}@localhost/staysync_test`,
       }),
     (error) => !error.message.includes(secretPassword)
   );

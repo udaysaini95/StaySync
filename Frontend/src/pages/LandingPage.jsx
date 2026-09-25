@@ -197,7 +197,7 @@ const RoleWorkspace = () => {
 
         <div className="hm-workspace-window" aria-label={`${workspace.label} product preview`}>
           <aside aria-label="Preview navigation">
-            <strong>HostelMate</strong>
+            <strong>StaySync</strong>
             <span>{workspace.label}</span>
             <nav>
               {workspace.navigation.map((item) => (
@@ -241,7 +241,7 @@ const LandingPage = () => (
       aria-labelledby="landing-title"
     >
       <div className="hm-editorial-hero__copy">
-        <p className="hm-landing-index">HOSTELMATE / CAMPUS RESIDENCE PLATFORM</p>
+        <p className="hm-landing-index">STAYSYNC / CAMPUS RESIDENCE PLATFORM</p>
         <p className="hm-landing-kicker">One accountable workspace</p>
         <h1 id="landing-title" aria-label="One operating system for hostel life.">
           <span>One operating system</span>
@@ -266,7 +266,7 @@ const LandingPage = () => (
         </p>
       </div>
 
-      <div className="hm-campus-ledger" aria-label="Sample HostelMate records">
+      <div className="hm-campus-ledger" aria-label="Sample StaySync records">
         <header className="hm-campus-ledger__header">
           <div>
             <span>PRODUCT PREVIEW · SAMPLE RECORDS</span>
@@ -327,7 +327,7 @@ const LandingPage = () => (
         <p className="hm-landing-kicker">From request to outcome</p>
         <h2 id="workflow-title">Important work should never disappear in a chat thread.</h2>
         <p>
-          HostelMate turns the two busiest hostel processes into visible,
+          StaySync turns the two busiest hostel processes into visible,
           permission-controlled timelines.
         </p>
       </div>
@@ -416,7 +416,7 @@ const LandingPage = () => (
     <section className="hm-access-panel" id="access" aria-labelledby="access-title">
       <div className="hm-access-panel__mark" aria-hidden="true">HM</div>
       <div className="hm-access-panel__copy">
-        <p>HOSTELMATE ACCESS</p>
+        <p>STAYSYNC ACCESS</p>
         <h2 id="access-title">Your hostel workspace is ready when you are.</h2>
         <span>
           Existing users sign in directly. Approved students activate their
@@ -436,7 +436,7 @@ const LandingPage = () => (
 
     <footer className="hm-landing-footer">
       <div>
-        <strong>HostelMate</strong>
+        <strong>StaySync</strong>
         <span>Campus residence operations</span>
       </div>
       <p>Residents · Rooms · Complaints · Leave · Gate · Mess</p>

@@ -1,4 +1,4 @@
-# HostelMate API Security Baseline
+# StaySync API Security Baseline
 
 This document records the protections introduced in the API-02 implementation
 slice. It is an operational baseline, not a replacement for the final security
